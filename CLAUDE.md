@@ -1,5 +1,11 @@
 # CLAUDE.md
 
+## Project Overview
+
+This is Ryan Serpico's personal portfolio website, showcasing his work as Deputy Director of Newsroom AI and Automation at Hearst Newspapers. The site features projects, blog posts, and information about Ryan's approach to using AI responsibly in journalism.
+
+## Technical Guidance
+
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Common Commands
@@ -11,7 +17,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Architecture Overview
 
-This is an **Astro.js personal website** based on the Dante theme with:
+This is Ryan Serpico's **personal portfolio site** built with Astro.js, based on the Dante theme by Just Good UI. Key features include:
 
 ### Content Collections
 
@@ -47,3 +53,7 @@ This is an **Astro.js personal website** based on the Dante theme with:
 - `src/pages/` follows Astro's file-based routing
 - Dynamic routes for blog posts, projects, and tag pages
 - RSS feed generated at `/rss.xml`
+
+## Theme Attribution
+
+This site uses the [Dante theme](https://github.com/JustGoodUI/dante-astro-theme) by [Just Good UI](https://justgoodui.com/), a minimal and responsive single-author blog and portfolio theme for Astro.js.
