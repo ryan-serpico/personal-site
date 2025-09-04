@@ -39,13 +39,13 @@ export type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
-    website: 'https://ryan-serpico.github.io/personal-site',
+    website: 'https://ryanserpi.co',
     title: 'Ryan Serpico',
     subtitle: 'Deputy Director of Newsroom AI and Automation at Hearst Newspapers',
     description: 'Ryan Serpico - Deputy Director of Newsroom AI and Automation at Hearst Newspapers, building AI tools to empower journalists nationwide',
     image: {
-        src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
+        src: '/mug.jpeg',
+        alt: 'Ryan Serpico'
     },
     headerNavLinks: [
         {
