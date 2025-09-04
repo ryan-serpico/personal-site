@@ -82,7 +82,7 @@ const siteConfig: SiteConfig = {
         }
     ],
     hero: {
-        title: 'Hi There & Welcome to My Corner of the Web!',
+        title: 'Howdy! 👋',
         text: "I'm **Ryan Serpico**, Deputy Director of Newsroom AI and Automation at Hearst Newspapers, where I build tools that leverage generative AI and automation to empower journalists across newsrooms nationwide. My approach focuses on using AI responsibly to support reporters—not replace them—while maintaining the highest editorial standards. As a University of Florida journalism graduate and former digital producer at the San Antonio Express-News, I'm passionate about the intersection of cutting-edge technology and quality journalism. I've developed tools like Producer-P and the award-nominated Kamala Harris News Assistant that help newsrooms work more efficiently while preserving journalistic integrity.",
         image: {
             src: '/mug.jpeg',
