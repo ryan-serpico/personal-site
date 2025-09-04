@@ -1,6 +1,8 @@
 ---
 import { type CollectionEntry, getCollection, render } from 'astro:content';
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import mugImage from '../assets/images/mug.jpeg';
 
 export async function getStaticPaths() {
     const pages = await getCollection('pages');
@@ -17,6 +19,7 @@ type Props = { page: CollectionEntry<'pages'> };
 const { page } = Astro.props;
 const { title, seo } = page.data;
 const { Content } = await render(page);
+const isAboutPage = page.id === 'about';
 ---
 
 <BaseLayout title={seo?.title ?? title} description={seo?.description} image={seo?.image} showHeader={false}>
@@ -24,6 +27,18 @@ const { Content } = await render(page);
         <header class="mb-8">
             <h1 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight">{title}</h1>
         </header>
+        {isAboutPage && (
+            <figure class="mb-8">
+                <Image 
+                    src={mugImage} 
+                    alt="Ryan Serpico" 
+                    class="w-full" 
+                    loading="lazy"
+                    widths={[400, 800, 1200]}
+                    sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1200px"
+                />
+            </figure>
+        )}
         <div class="max-w-none prose sm:prose-lg">
             <Content />
         </div>

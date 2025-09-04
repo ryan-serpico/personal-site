@@ -8,8 +8,6 @@ seo:
     alt: Ryan Serpico
 ---
 
-![Ryan Serpico](/mug.jpeg)
-
 ## Ryan Serpico - Deputy Director of Newsroom AI and Automation
 
 **Greetings!** I'm Ryan Serpico, Deputy Director of Newsroom AI and Automation at Hearst Newspapers, where I build tools that leverage generative AI and automation to empower journalists across newsrooms nationwide. My approach focuses on using AI responsibly to support reporters—not replace them—while maintaining the highest editorial standards.
