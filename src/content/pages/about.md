@@ -2,42 +2,48 @@
 title: About
 seo:
   title: About Me
-  description: Learn more about the person behind the website and embark on a journey of inspiration and shared experiences.
+  description: Learn more about Ryan Serpico, Deputy Director of Newsroom AI and Automation at Hearst Newspapers, building AI tools to empower journalists.
   image:
-    src: '/about.jpeg'
-    alt: A person sitting at a desk in front of a computer
+    src: '/mug.jpeg'
+    alt: Ryan Serpico
 ---
 
-![Alt text for image](/about.jpeg)
+![Ryan Serpico](/mug.jpeg)
 
-**Note!:** This about page is entirely fictional and created for the purpose of showcasing [Dante Astro.js theme functionality](https://justgoodui.com/astro-themes/dante/).
+## Ryan Serpico - Deputy Director of Newsroom AI and Automation
 
-## Ethan Donovan - Web Developer based in Estonia
+**Greetings!** I'm Ryan Serpico, Deputy Director of Newsroom AI and Automation at Hearst Newspapers, where I build tools that leverage generative AI and automation to empower journalists across newsrooms nationwide. My approach focuses on using AI responsibly to support reporters—not replace them—while maintaining the highest editorial standards.
 
-**Greetings!** I'm Ethan Donovan, a passionate web developer residing in the picturesque landscapes of [Estonia](https://en.wikipedia.org/wiki/Estonia). With a keen eye for design and a love for crafting seamless digital experiences, I bring a unique blend of creativity and technical expertise to the world of web development.
+## Background and Education
 
-## Skills and Expertise
+I'm a University of Florida journalism graduate (Class of 2018) and a first-generation college student from Pembroke Pines, Florida. My journey into the intersection of technology and journalism began during my studies, where professors Mindy McAdams and Norm Lewis influenced my path, and web app development classes sparked my technical curiosity.
 
-I specialize in front-end and back-end development, utilizing the latest technologies to build responsive and user-friendly websites. My proficiency includes **HTML**, **CSS**, **JavaScript**, and frameworks such as **Astro.js** for dynamic and interactive user interfaces. On the server side, I'm well-versed in Node.js and have experience with database management systems like MongoDB.
+## Career Path
 
-## Innovation and Problem-Solving
+Before joining Hearst, I worked for three years as a digital producer and graphics reporter at the San Antonio Express-News during the pandemic. There, I created workflow automation tools to help journalists work more efficiently and supported fellow reporters with incorporating data into their stories.
 
-I thrive on solving complex problems and transforming ideas into functional, elegant websites. Whether it's optimizing performance, implementing new features, or troubleshooting issues, I approach each challenge with enthusiasm and a commitment to delivering high-quality solutions.
+## Innovation in Journalism
 
-## Global Perspective, Local Impact
+At Hearst Newspapers' DevHub, I've developed several groundbreaking tools:
 
-Living in Estonia has not only influenced my appreciation for nature and culture but has also shaped my approach to web development. I understand the importance of creating digital solutions that resonate with local audiences while maintaining a global perspective.
+- **Producer-P**: An AI-powered audience optimization tool now helping several Hearst newsrooms, and a finalist for an International News Media Association Global Media Award
+- **Radar**: An automation tool that monitors data feeds for newsworthy content
+- **Kamala Harris News Assistant**: An award-nominated AI chat interface that allows readers to explore 29 years of San Francisco Chronicle reporting about Vice President Kamala Harris
 
-## Continuous Learning
+## Philosophy and Approach
 
-The dynamic nature of the tech industry inspires me to stay up-to-date with the latest trends and advancements. I'm always eager to expand my skill set and embrace emerging technologies that enhance the functionality and aesthetics of the websites I create.
+I'm passionate about creating generative AI-powered tools that assist local newsrooms in creating high-quality content while developing them in a responsible, ethical, and transparent manner. As I often say: "I care about doing this responsibly and safely, empowering our journalists, not replacing them."
 
-## Collaboration and Communication
+## Technical Expertise
 
-I believe in the power of collaboration and effective communication. Whether working with clients, designers, or fellow developers, I value clear communication to ensure the success of every project.
+I specialize in building AI and automation tools for newsroom workflows, with experience in:
+- Generative AI development and implementation
+- Data journalism and visualization
+- Workflow automation and process optimization
+- Full-stack development for editorial applications
 
 ## Get in Touch
 
-Are you looking to elevate your online presence or bring your digital ideas to life? I'd love to hear from you! Feel free to reach out for collaboration, consultation, or just a friendly chat about all things web development.
+Interested in AI innovation in journalism, newsroom automation, or collaborative projects at the intersection of technology and quality reporting? Feel free to reach out!
 
-_Let's build something amazing together!_
+_Let's build the future of journalism together!_

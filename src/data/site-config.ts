@@ -70,10 +70,6 @@ const siteConfig: SiteConfig = {
             text: 'Contact',
             href: '/contact'
         },
-        {
-            text: 'Terms',
-            href: '/terms'
-        },
     ],
     socialLinks: [
         {
@@ -94,11 +90,6 @@ const siteConfig: SiteConfig = {
                 href: '/contact'
             }
         ]
-    },
-    subscribe: {
-        title: 'Stay Updated on AI in Journalism',
-        text: 'Get insights on newsroom AI innovation and automation tools directly in your inbox.',
-        formUrl: '#'
     },
     postsPerPage: 8,
     projectsPerPage: 8
