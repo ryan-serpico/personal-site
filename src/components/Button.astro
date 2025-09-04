@@ -7,13 +7,19 @@ type ButtonProps = HTMLAttributes<'button'> & { href?: never };
 type Props = ButtonProps | AnchorProps;
 
 const { href, class: className, ...rest } = Astro.props;
+
+// Handle base path for internal links
+const resolvedHref = href && href.startsWith('/') && !href.startsWith('http')
+    ? import.meta.env.BASE_URL + href.replace(/^\//, '')
+    : href;
+
 const buttonClasses =
     'inline-flex items-center justify-center px-6 py-2 font-serif leading-tight italic text-main bg-main border border-main rounded-full transition hover:bg-muted';
 ---
 
 {
-    href ? (
-        <a href={href} class:list={[buttonClasses, className]} {...rest}>
+    resolvedHref ? (
+        <a href={resolvedHref} class:list={[buttonClasses, className]} {...rest}>
             <slot />
         </a>
     ) : (
