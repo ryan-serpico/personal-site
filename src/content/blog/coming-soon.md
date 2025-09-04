@@ -2,7 +2,6 @@
 title: 'Blog Coming Soon'
 publishDate: 'Sep 04 2025'
 excerpt: 'I will add blog content eventually. Stay tuned for insights on AI in journalism, newsroom automation, and the future of technology in media.'
-tags: ['announcement']
 isFeatured: true
 ---
 
