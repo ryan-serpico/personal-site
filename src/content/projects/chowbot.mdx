@@ -1,0 +1,95 @@
+---
+title: 'Chowbot - AI Restaurant Recommendation Assistant'
+description: An AI-powered chatbot that helps Bay Area readers find vetted restaurant recommendations from the San Francisco Chronicle's extensive database of expert reviews.
+publishDate: 'Feb 28 2024'
+isFeatured: true
+---
+
+import { Image } from 'astro:assets';
+import chowbotImage from '../../assets/images/chowbot.png';
+
+<Image src={chowbotImage} alt="Chowbot interface showing restaurant recommendations" />
+
+**Project Overview:**
+[Chowbot](https://www.sfchronicle.com/projects/where-to-eat-sf-bay-area-chowbot/) is an AI-powered chatbot developed for the San Francisco Chronicle that helps readers discover restaurants across the Bay Area. Built by Hearst DevHub in collaboration with the Chronicle's Food & Wine team, Chowbot answers restaurant recommendation questions by drawing exclusively from the Chronicle's database of vetted, expert-reviewed restaurants. Rather than hallucinating recommendations, it stays grounded in actual journalism and admits when it doesn't have an answer.
+
+## The Challenge
+
+The San Francisco Chronicle has published hundreds of restaurant guides and reviews over the years—from "Top Pizza" to "Best Dim Sum" to "Best Brunch." While this represents incredible journalism and expertise, readers faced a real problem: finding the specific recommendation they needed was difficult. They'd have to know which guide existed, then navigate to it. The challenge was to make this extensive content more discoverable and accessible without sacrificing the editorial quality that made it valuable.
+
+## What Makes This Project Special
+
+**Grounded in Real Journalism:**
+
+- Every restaurant recommended has been visited and reviewed by Chronicle food critics and staff
+- Recommendations come directly from published, fact-checked guides
+- The tool refuses to guess or hallucinate recommendations outside its knowledge base
+- When Chowbot doesn't have an answer, it says so, rather than making something up
+
+**Smart Search Using AI:**
+
+- Uses embedding models to understand the semantic meaning of queries
+- Converts queries into vectors that can be compared with restaurant data
+- For example, Italian restaurants and pizza shops have similar "vibes" in the embedding space, making them discoverable through related searches
+- This approach goes beyond simple keyword matching
+
+**Designed Constraints:**
+
+- Operates only within the Chronicle's verified database of 300+ reviewed restaurants
+- Focuses on factual information (cuisine types, locations, specific dishes)
+- Avoids subjective claims (atmosphere, noise level, exact rankings)
+- Recognizes that some questions (like neighborhood-specific searches in cities outside San Francisco) are outside its capabilities
+
+## Technical Architecture
+
+**Multi-Step Query Processing:**
+
+1. **Content Moderation:** All queries pass through a moderation check to ensure appropriate use
+2. **Embedding Lookup:** Queries are converted to embeddings and compared against restaurant data in the database
+3. **Candidate Selection:** The three closest matches are selected based on semantic similarity
+4. **LLM Generation:** A fine-tuned version of GPT-3.5-Turbo generates conversational responses from the selected restaurants
+5. **Fallback Search:** If the LLM determines insufficient data exists, the system returns relevant Chronicle guides instead of making something up
+
+**Model Selection:**
+Used a fine-tuned GPT-3.5-Turbo rather than a standard model, allowing for better performance on the specific task of restaurant recommendations while maintaining safety.
+
+## Key Features
+
+**Semantic Understanding:**
+Queries are understood by meaning, not just keywords. A search for "fancy Italian dinner" finds the same restaurants as "elegant pasta restaurants."
+
+**Multi-Dimensional Search:**
+
+- Cuisine type (pizza, Thai, dim sum, etc.)
+- Specific dishes (hummus, Dungeness crab, etc.)
+- Neighborhood (within San Francisco)
+- Landmarks (Chase Center, Ferry Building, etc.)
+- Cities (works for any Bay Area city, though coverage varies)
+
+**Conversational Responses:**
+The tool provides natural language recommendations with context, not just a raw list of restaurants.
+
+**Transparent Limitations:**
+Clearly indicates when data doesn't exist rather than recommending unvetted alternatives.
+
+## Impact
+
+**Accessibility:**
+Launched in February 2024, Chowbot made the Chronicle's extensive restaurant coverage discoverable through natural language search, increasing engagement with existing food content.
+
+**User Adoption:**
+Early reader queries included gluten-free options, vegetarian dim sum, fried chicken, and restaurants for celebrations—demonstrating clear reader demand for this type of tool.
+
+**Journalistic Integrity:**
+Demonstrated how news organizations can use AI to enhance discoverability of existing content while maintaining editorial standards. Unlike ChatGPT, every recommendation is traceable to published journalism.
+
+**Industry Model:**
+Showed a practical implementation of retrieval-augmented generation (RAG) in news, using embeddings plus a language model to ground AI outputs in verified content.
+
+## Why This Project Matters
+
+Chowbot demonstrates that AI in journalism doesn't require choosing between automation and accuracy. By constraining the system to verified content and being transparent about limitations, the tool provides genuine value to readers while respecting journalistic standards.
+
+The project also illustrates how local news organizations can leverage their unique asset—deep, expert coverage of their community—to build products that larger competitors can't replicate. The Chronicle's database of visited, reviewed restaurants creates a defensible advantage that no generic AI system can match.
+
+For developers and product teams, Chowbot serves as a case study in building AI systems with meaningful constraints: staying grounded in reliable sources, refusing to hallucinate, and being honest about what the system can and cannot do.

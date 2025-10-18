@@ -54,6 +54,25 @@ This is Ryan Serpico's **personal portfolio site** built with Astro.js, based on
 - Dynamic routes for blog posts, projects, and tag pages
 - RSS feed generated at `/rss.xml`
 
+## Adding Images to Content
+
+To add optimized images to project or blog posts:
+
+1. **Use .mdx extension** - Rename `.md` files to `.mdx` to enable JSX component support
+2. **Import the Image component** - Add at the top of the file after frontmatter:
+   ```jsx
+   import { Image } from 'astro:assets';
+   import myImage from '../../assets/images/my-image.png';
+   ```
+3. **Use the Image component** - Place it in your content:
+   ```jsx
+   <Image src={myImage} alt="Description of image" />
+   ```
+4. **Store images** - Place all images in `src/assets/images/` directory
+5. **Path reference** - For files in `src/content/projects/`, use `../../assets/images/` path (go up 2 levels from projects folder to src, then into assets)
+
+Astro automatically optimizes images (responsive sizes, WebP conversion, lazy loading, etc.) when using the Image component this way.
+
 ## Theme Attribution
 
 This site uses the [Dante theme](https://github.com/JustGoodUI/dante-astro-theme) by [Just Good UI](https://justgoodui.com/), a minimal and responsive single-author blog and portfolio theme for Astro.js.
