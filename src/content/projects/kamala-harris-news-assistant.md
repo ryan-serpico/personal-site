@@ -6,7 +6,7 @@ isFeatured: true
 ---
 
 **Project Overview:**
-The Kamala Harris News Assistant is a groundbreaking interactive tool that combines artificial intelligence with three decades of quality journalism. Built in collaboration between the San Francisco Chronicle newsroom and Hearst DevHub (Hearst Newspapers' editorial engineering, visual storytelling and audience strategy team), this innovative chat interface allows readers to ask questions and receive accurate, fact-based answers about Vice President Kamala Harris, drawing exclusively from the Chronicle's extensive archive of political reporting dating back to 1995.
+The [Kamala Harris News Assistant](https://www.sfchronicle.com/projects/2024/kamala-harris-election-questions/) is a groundbreaking interactive tool that combines artificial intelligence with three decades of quality journalism. Built in collaboration between the San Francisco Chronicle newsroom and Hearst DevHub (Hearst Newspapers' editorial engineering, visual storytelling and audience strategy team), this innovative chat interface allows readers to ask questions and receive accurate, fact-based answers about Vice President Kamala Harris, drawing exclusively from the Chronicle's extensive archive of political reporting dating back to 1995.
 
 ## The Challenge
 
