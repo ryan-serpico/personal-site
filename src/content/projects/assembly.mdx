@@ -1,0 +1,75 @@
+---
+title: 'Assembly - AI-Powered Public Meeting Monitoring'
+description: An intelligent system that monitors and summarizes government meetings across the San Francisco Bay Area, winning Excellence in AI Innovation at the 2025 Online Journalism Awards.
+publishDate: 'Jan 15 2025'
+isFeatured: true
+---
+
+import { Image } from 'astro:assets';
+import chowbotImage from '../../assets/images/assembly.png';
+
+<Image src={chowbotImage} alt="Assembly interface showing meeting summary" />
+
+**Award Recognition:**
+Assembly won the **"Excellence in AI Innovation, Medium Newsroom"** award at the 2025 Online Journalism Awards, recognizing its innovative approach to using AI to address the challenge of comprehensive local news coverage.
+
+## The Challenge
+
+The San Francisco Bay Area encompasses nine counties, more than 100 municipalities, and a complex array of regional agencies, special districts, utilities, associations, and commissions. Even with a robust team of reporters, it's impossible to cover every government meeting—yet these meetings often produce important news that affects readers' lives.
+
+Public meetings represent a critical source of accountability journalism, but the logistics are brutal: there are literally scores of public meetings happening across the region daily. A reporter cannot physically be everywhere, and listening to hours of meeting recordings to find the needle-in-the-haystack story is a luxury few newsrooms can afford.
+
+This created a gap: important community information was slipping through the cracks simply because no one could feasibly monitor everything.
+
+## The Solution: Assembly
+
+Assembly is an AI tool built by the Hearst DevHub that automates the monitoring and summarization of city council, school board, state legislature, and other public meetings throughout the San Francisco Bay Area. It empowers journalists to efficiently track events across their communities without being physically present or listening to entire meeting recordings.
+
+Instead of taking the first step, Assembly starts at the finish line—doing the initial triage work so reporters can focus on what journalism does best: going deeper, making calls, checking facts, and talking to sources.
+
+## How It Works
+
+**Comprehensive Monitoring:**
+
+- More than 200 custom web scrapers watch government platforms hourly for new meetings
+- Monitors cities, counties, school districts, special districts, and regional agencies across the Bay Area
+- Automatically detects and tracks new meetings as they're scheduled
+
+**Transcription & Analysis:**
+
+- Meeting recordings are automatically downloaded and processed
+- Audio is extracted and transcribed using a self-hosted transcription system powered by OpenAI's Whisper model
+- The self-hosted approach ensures reliability and data privacy for sensitive local government proceedings
+
+**Smart Alert System:**
+
+- Reporters receive email alerts when predefined keywords are detected in meeting transcripts
+- Alerts are targeted and relevant—focused on topics that matter to their beat
+- Reduces noise by surfacing only information relevant to each reporter's coverage area
+
+**Interactive Transcript Intelligence:**
+
+- Slack messages provide a direct interface for querying transcripts using GPT-4o
+- Reporters can generate summaries of entire meetings or specific segments
+- Reporters can ask questions directly of the transcript: "What did Councilmember X say about housing policy?" or "Was the water main rupture discussed?"
+- The system returns contextual responses grounded in the actual transcript, not guesses
+
+## Real-World Impact
+
+Since deployment, Assembly has enabled the Chronicle to report dozens of stories that otherwise might have been missed or would have taken significantly longer to find, including:
+
+- San Francisco's embrace of "entertainment zones"
+- Hospital delays that kept patients waiting in ambulances, costing taxpayers thousands
+- The shuttering of a job training nonprofit
+- An apple cannery's departure—the latest sign of tumult in Sonoma County agriculture
+- And more emerging from the stories breaking in meetings across the region
+
+The tool doesn't replace journalism—it enables it. Reporters are freed from the impossible task of being everywhere at once, so they can do what they do best: investigate, verify, and hold power accountable.
+
+## Why This Matters
+
+Assembly represents a practical solution to a well-defined problem in local journalism. The Bay Area's size and complexity means important information can easily slip through the cracks. By automating the initial monitoring and transcription work, Assembly fills a genuine gap and helps ensure that important community information reaches readers.
+
+The project also demonstrates how AI can be deployed thoughtfully in newsrooms—not to replace journalists, but to augment their capabilities and help them cover more of their community more effectively. It's a tool built around journalists' actual workflows and challenges, not a solution in search of a problem.
+
+For other newsrooms facing similar coverage challenges, Assembly provides a model: identify the bottleneck (monitoring hundreds of meetings), automate the most tedious part (watching platforms, transcribing audio), and trust your journalists to do the irreplaceable work of turning raw information into meaningful stories.
